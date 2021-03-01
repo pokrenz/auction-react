@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+	.navbar {
+		@apply w-screen p-4 ;
+		background-image: linear-gradient(to right,#1ecbe1,#148492);
+	}
+
+	.navbar .logo {
+		@apply text-2xl text-black font-semibold;
+	}
+
+	.bg-primary-dark {
+		background-color: #0d5a64;
+	}
+
+	.bg-primary {
+		background-color:  #1ecbe1;
+	}
+
+	.bg-primary-dark-2 {
+		background-color:   #148492;
+	}
+
+	.dropdown {
+		clear :both;
+		position: relative;
+	}
+	.dropdown .dropdown-item {
+		display: none;
+	}
+
+}
